@@ -1,12 +1,18 @@
 #
-def get_book_text(file_path):
-    with open(file_path) as f:
-        file_contents = f.read()
-    return file_contents
+
+def get_book_text(path):
+    with open(path) as f:
+        contents = f.read()
+    return contents
 
 def main():
-    file_path = 'books/frankenstein.txt'
-    book_text = get_book_text(file_path)
-    print(book_text)
+    path = 'books/frankenstein.txt'
+    book_text = get_book_text(path)
+    return(book_text)
+
+from stats import word_count
+from stats import char_count
 
 main()
+word_count(main())
+char_count(main())

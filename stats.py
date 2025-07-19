@@ -4,7 +4,6 @@ def word_count(book_text):
     print(f"{count} words found in the document.")
 
 def char_count(book_text):
-    
     char_dict = {}
     for char in book_text.lower():
         if char in char_dict:

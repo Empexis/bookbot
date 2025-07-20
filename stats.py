@@ -19,5 +19,3 @@ def sort_char_dict(char_dict):
     listed_chars.sort(reverse=True, key=sort_on)
     new_list = [{"char": key, "num": value} for key, value in listed_chars]
     return new_list
-
-    
